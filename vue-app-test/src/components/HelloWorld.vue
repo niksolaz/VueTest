@@ -11,11 +11,21 @@
       </a>
       </h2>
     </v-layout>
+    <div class="d-flex">
+      <Card></Card>
+      <Card></Card>
+      <Card></Card>
+      <Card></Card>
+    </div>
   </v-container>
 </template>
 
 <script>
+import Card from '@/components/Card.vue'
   export default {
+    components: {
+      Card,
+    },
     data: () => ({
       ecosystem: {
           text: 'My Github',
